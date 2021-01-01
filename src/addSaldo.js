@@ -26,7 +26,7 @@ handleChangesaldo(event){
 }
 
   handleAdd(){
-    axios.put('http://localhost:8000/user/updateSaldo', { 
+    axios.put('http://52.177.10.241:8000/user/updateSaldo', { 
       "NIM" : this.state.nim,
       "nama" : this.state.nama,
       "saldo" : this.state.saldo  })

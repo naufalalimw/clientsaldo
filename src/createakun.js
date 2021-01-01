@@ -41,7 +41,7 @@ class CreateAkun extends Component{
         // }, (error) => {
         //   alert(error)
         // });
-        axios.post('http://localhost:8000/user/create', {
+        axios.post('http://52.177.10.241:8000/user/create', {
           "NIM" : this.state.nim,
           "nama" : this.state.nama,
           "saldo" : this.state.saldo

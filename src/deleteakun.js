@@ -23,7 +23,7 @@ class DeleteAkun extends Component{
   }
 
   handleDelete(){
-    axios.delete('http://localhost:8000/user/delete', { data:{
+    axios.delete('http://52.177.10.241:8000/user/delete', { data:{
       "NIM" : this.state.nim,
       "nama" : this.state.nama}
     }).then((response) => {

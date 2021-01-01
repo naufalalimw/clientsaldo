@@ -24,7 +24,7 @@ class Dashboard extends Component{
         this.setState({nama: event.target.value});
       }
       handleSubmit(){
-        axios.get('http://localhost:8000/user/'.concat(this.state.nim,'/',this.state.nama,'/getSaldo')).then(response => {
+        axios.get('http://52.177.10.241:8000/user/'.concat(this.state.nim,'/',this.state.nama,'/getSaldo')).then(response => {
         alert("Your remaining saldo : " + response.data)    
         this.setState({saldo: response.data})
         }, (error) => {
