@@ -7,11 +7,12 @@ services:
       context: .
       dockerfile: ./Dockerfile
     environment:
-      NODE_ENV: production
+      - CHOKIDAR_USEPOLLING=true
     ports:
       - 3000:3000
-    volumes: 
-      - .:/usr/src/app
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
 
 
 volumes: 
